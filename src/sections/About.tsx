@@ -9,15 +9,12 @@ export default function About() {
           <div className="shrink-0 animate-fade-in">
             <div className="relative w-52 h-52 sm:w-64 sm:h-64">
               <div className="w-full h-full rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-600 p-1 shadow-xl shadow-indigo-500/20">
-                <div className="w-full h-full rounded-xl bg-slate-100 dark:bg-slate-800 flex flex-col items-center justify-center gap-3 overflow-hidden">
+                <div className="w-full h-full rounded-xl overflow-hidden">
                   <img
-                    src="/avatar-placeholder.svg"
-                    alt="Paul Fothergill — placeholder, real photo coming soon"
-                    className="w-32 h-32 opacity-60"
+                    src="/profile_picture.png"
+                    alt="Paul Fothergill"
+                    className="w-full h-full object-cover"
                   />
-                  <span className="text-xs text-slate-400 dark:text-slate-500 font-mono">
-                    photo coming soon
-                  </span>
                 </div>
               </div>
               {/* Decorative dot */}
