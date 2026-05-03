@@ -1,0 +1,19 @@
+import About from '../sections/About';
+import BlogPreview from '../sections/BlogPreview';
+import Contact from '../sections/Contact';
+import Hero from '../sections/Hero';
+import Projects from '../sections/Projects';
+import Skills from '../sections/Skills';
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <BlogPreview />
+      <Contact />
+    </>
+  );
+}
