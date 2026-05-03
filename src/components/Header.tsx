@@ -48,7 +48,7 @@ export default function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="container-max section-padding py-0">
+      <div className="container-max px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
@@ -106,7 +106,7 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-          <nav className="container-max section-padding py-3 flex flex-col gap-1">
+          <nav className="container-max px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-1">
             {navItems.map(item => (
               <button
                 key={item.section}
