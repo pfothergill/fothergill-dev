@@ -84,7 +84,7 @@ export default function Skills() {
                   {skill.category}
                 </span>
                 <span
-                  className={`text-[10px] px-1.5 py-0.5 rounded-full border font-medium ${levelColors[skill.level]}`}
+                  className={`px-1.5 py-0.5 text-xs rounded-full border font-medium ${levelColors[skill.level]}`}
                 >
                   {skill.level}
                 </span>
