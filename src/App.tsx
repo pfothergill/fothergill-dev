@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { ThemeProvider } from './context/ThemeContext';
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col">
           <Header />
           <main className="flex-1">
@@ -25,6 +27,14 @@ export default function App() {
       </BrowserRouter>
     </ThemeProvider>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
 }
 
 function NotFound() {
