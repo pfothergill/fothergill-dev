@@ -52,6 +52,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
+            onClick={() => window.scrollTo(0, 0)}
             className="font-mono font-semibold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors text-sm"
           >
             <span className="text-indigo-500">&lt;</span>
